@@ -41,6 +41,9 @@ h5,
 h6 {
     text-align: center;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
 .header {
