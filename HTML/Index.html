@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Manchester United</title>
+</head>
+
+<header class="header">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <img src="../Images/badge.png">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link external-link" aria-current="page" id="home"
+                            href="../HTML/Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link external-link" href="../HTML/Managers.html" id="Managers">Managers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link external-link" href="../HTML/Trophies.html" id="Managers">Trophies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link external-link" href="../HTML/ContactUs.html" id=" Contactus" role="button"
+                            aria-expanded="false">
+                            Contact us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link external-link" href="../HTML/SavedPage.html" id=" SavedPage" role="button"
+                            aria-expanded="false">
+                            Your Saved Items
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="likeBtn" style="margin-right: 2px;" class="btn btn-success" onclick="hasLike()">
+                            like
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="dislikeBtn" style="float: right;" class="btn btn-danger" onclick="hasDislike()">
+                            dislike
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div>
+        <h1>Welcome to a tribute page for the most historic English football team.</h1>
+        <hr>
+        <h2>Testimonies by former players and managers.</h2>
+    </div>
+    <hr>
+    <div class="row">
+        <div>
+            <h5 id="CR7Title">Cristiano Ronaldo</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 73%;
+            color: whitesmoke;" class="btn btn-outline-light" id="CR7" onclick="saveForLaterCR7()">Save for
+                Later</button>
+        </div>
+        <p id="CR7para" class="first">"At United, there are great traditions, which you can't buy in one or two years.
+            They are created by
+            victories. You need to prove again and again that you are better than the others. Manchester United have
+            always done this, and are still doing it, so they are the best."</p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="patriceTitle">Patrice Evra</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 65%;
+            color: whitesmoke;" class="btn btn-outline-light" id="Patrice" onclick="saveForLaterPatrice()">Save for Later</button>
+        </div>
+        <p id="patDescp" class="first">“It's a special club. It's got history. When I slip on the Manchester United
+            shirt, it's like I'm wearing its
+            past. So you have to sacrifice yourself for this club.”</p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="JMTitle">Jose Mourinho</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 57%;
+            color: whitesmoke;" class="btn btn-outline-light" id="JM" onclick="saveForLaterJose()">Save for Later</button>
+        </div>
+        <p id="JMpara" class="first">“If you want me to rule out ever being Manchester United manager, I can't. Special
+            clubs need special managers, so in theory it could work.” </p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="MBTitle">Matt Busby</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 49%;
+            color: whitesmoke;" class="btn btn-outline-light" id="MB" onclick="saveForLaterMatt()">Save for Later</button>
+        </div>
+        <p id="MBTitle" class="first">“I never wanted Manchester United to be second to anybody. Only the best would be
+            good enough.” </p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="RVPTitle">Robin Van Persie</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 41%;
+            color: whitesmoke;" class="btn btn-outline-light" id="RVP" onclick="saveForLaterRVP()">Save for Later</button>
+        </div>
+        <p id="RVPpara" class="first">“Manchester United breathe football. When I have to make hard decisions, I always
+            listen to the little boy
+            inside me and what he wants. That little boy was screaming for United.”</p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="BerTitle">Dimitar Berbatov</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 33%;
+            color: whitesmoke;" class="btn btn-outline-light" id="Ber" onclick="saveForLaterBerb()">Save for Later</button>
+        </div>
+        <p id="Berpara" class="first">“My mind was always set on joining Manchester United. How can you not go to
+            United? I don't play for money. I
+            play for glory and winning championships. I'm happy here. I hear people complain about the weather, there's
+            nothing to do and the food. But, for me, it's not like that. I play for a club I love, the biggest club, and
+            everything else doesn't matter.”</p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="SAFTitle">Sir Alex Ferguson</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 23%;
+            color: whitesmoke;" class="btn btn-outline-light" id="SAF" onclick="saveForLaterSAF()">Save for Later</button>
+        </div>
+        <p id="SAFpara" class="first">“Manchester United might not win Premier League every year, but we'd always be up
+            there competing for it
+            every year.”</p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="ROMTitle">Romelu Lukaku</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 15%;
+            color: whitesmoke;" class="btn btn-outline-light" id="ROM" onclick="saveForLaterROM()">Save for Later</button>
+        </div>
+        <p id="ROMpara" class="first">“At Manchester United, we play to win. That's my first mentality when I get onto
+            the pitch. Then everything
+            else comes with it.” </p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="ECTitle">Eric Cantona</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 7%;
+            color: whitesmoke;" class="btn btn-outline-light" id="EC" onclick="saveForLaterEC()">Save for Later</button>
+        </div>
+        <p id="ECpara" class="first">“When I think football, I think Manchester United. I still support United and
+            always will. I will die with
+            them in my heart.” </p>
+    </div>
+
+    <div>
+        <div>
+            <h5 id="SMBTitle">Sir Matt Busby</h5>
+            <button style="position: absolute;
+            right: 37%;
+            bottom: 0%;
+            color: whitesmoke;" class="btn btn-outline-light" id="SMB" onclick="saveForLaterSMB()">Save for Later</button>
+        </div>
+
+        <p id="SMBpara" class="first">“At United we strive for perfection and if we fail we might just have to settle for
+            excellence.” </p>
+    </div>
+
+    <aside>
+        <p class="second">Follow this <a
+                href="https://www.google.com/search?client=firefox-b-d&q=premier+league+table#cobssid=s&sie=lg;/g/11pz7zbpnb;2;/m/02_tc;st;fp;1;;;"
+                target="_blank">this link</a> to see the current Premier League Table</p>
+    </aside>
+
+    <aside>
+        <p class="second">Follow this <a
+                href="https://www.google.com/search?client=firefox-b-d&q=Manchester+United+transfer+news"
+                target="_blank">this link</a> For the latest transfer news</p>
+    </aside>
+    <script src="../Javascript/Index.js"></script>
+</body>
+
+</html>
